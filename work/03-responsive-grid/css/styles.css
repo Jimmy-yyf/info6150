@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+      margin:10px;
+    margin-top: 4px;
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.header{
+  background-color: antiquewhite;
+
+}
+.header-title{
+    font-size: 3rem;
+    margin:1rem;
+}
+ul{
+    padding-left: 0;
+}
+.header-menu-list{
+    font-size: 1.25rem;
+    text-align: center;
+      list-style-type: none;
+
+}
+
+.main{
+    background-color: blanchedalmond;
+    display:grid;
+    gap: 0.25;
+    margin:0;
+    font-family:  sans-serif;
+}
+.main-title{
+    font-size: 2rem;
+    margin:2rem;
+
+}
+.main-list{
+    grid-template-columns: repeat(12,1fr);
+ 
+     padding:0;
+    display:grid;
+    list-style-type: none;
+}
+.main-item{
+    grid-column:span 12;
+    margin:2rem; 
+    margin-top: 0;
+}
+.card {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-link{
+    margin-top: auto;
+    background-color: rgb(211, 178, 138);
+    color:white;
+    font-size: 200%;
+    align-self: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+}
+.card-text{
+    margin:1rem;
+}
+.footer{
+display: grid;
+    background-color: antiquewhite;
+}
+
+
+.footer-menu-list{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    list-style-type: none
+}
+
+.footer-menu-Item{
+    font-size: 0.5rem;
+    grid-column:span 12;
+}
+
+@media(min-width: 50rem){
+    .header{
+        display:grid;
+        grid-template-areas: 
+        "pic title"
+        "pic URL"        ;
+        grid-template-columns: auto 1fr;
+        align-items:center;
+    }
+    ul{
+        padding-left: 0;
+    }
+    .header-logo{
+        grid-area: pic;
+    }
+    .header-title{
+        grid-area: title;
+    }
+    .header-menu{
+        grid-area: URL;
+    }
+    .header-menu-list{
+        display:grid;
+      grid-template-columns:  1fr 1fr 1fr;
+    }
+    .main{
+        height:100%;
+    }
+    .main-item{
+        grid-column:span 4;
+
+    }
+    .footer-menu-link{
+        background-color: black;
+        font-size: 0.5rem;
+    }
+    .footer-menu-Item{
+        grid-column:span 3;
+    }
+    }
