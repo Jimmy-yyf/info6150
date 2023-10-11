@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>basic-form</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1 class="header-title">Everyday Cats</h1>
+      </header>
+      <main class = "main">
+        <h2 class = main-title>Wanna receive everyday Cats?</h2>
+        <div class ="userinput">
+          <h3 class = main-title>Regist here</h3>
+          <p class="require-star">
+          <span class="required">*</span> means required
+        </p>
+       <form action ="/submit" class = "userinfo" method="POST">
+        <label class ="enterbox">
+          <span><span class="required">*</span>Name:</span>
+          <input name="name"  required title ="Must Be name">
+          
+        </label>
+        
+        <label class ="enterbox">
+          <span class = enterboxtext><span class="required">*</span>Email:</span>
+          <input type="email"  name="email"  required title ="Must Be Email Address">
+
+        </label>
+        
+        <label class = "checkbox" >
+          <span>Do you want us to send you annoying emails?</span>
+          <input type="checkbox"  name="annoy_me"  checked>
+
+        </label>
+       
+        <label class = "dropdownbox">
+          <span><span class="required">*</span>tire:</span>
+        <select name="tier" required>
+            <option value="" >Please select</option>
+            <option value="1">Silver Tier</option>
+            <option value="2">Gold Tier</option>
+            <option value="3">Platinum Tier</option>
+        </select>
+      </label>
+        
+        <button type="submit">Register</button>
+       </form>
+      </div>
+      <div class = "image">
+      <img class="heroimage" alt="kitty" src="http://placekitten.com/550/550/?image=5"> 
+      </div>
+      </main>
+      <footer class = footer>
+       <a class="footer-link" href="/"> privacy policy</a> 
+      </footer>
+    </div>
+
+  </body>
+</html>
