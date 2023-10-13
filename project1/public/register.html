@@ -1,0 +1,98 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+    <link rel="stylesheet" href= "registerstyle.css"/>
+      <meta charset="utf-8"/>
+      <meta name=""viewport" content="width=device-width">
+      <title>about</title>
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+              <a href="index.html">
+                <img class ="icon" src="icon.jpg" alt="paws">
+            </a>
+              <h1 class="header-title">Register for our Members</h1>
+              <nav class ="header-menu">
+                <ul class ="header-menu-list">
+                <li class ="menu-Item">
+                  <button class="menu-button"type = "button">AboutUs</button> 
+                  <ul class = "submenu" >
+                    <li class ="header-menu-Item" >
+                        <a calss="header-menu-link" href="index.html">All About Dogs</a></li>
+                      <li class ="header-menu-Item" ">
+                        <a class="header-menu-link" href="about.html">Our Stories</a></li>
+                    <li class ="header-menu-Item" >
+                      <a class="header-menu-link" href="register.html">Register for our Member</a></li>
+                  </ul>
+                </li>
+                </ul>
+              </nav>
+            </header>
+            <main class = main>
+                
+                    <h2 class = main-title>Wanna receive our daily Dogs?</h2>
+                    <div class ="userinput">
+                      <h3 class = main-title>Register here</h3>
+                      <p class="require-star">
+                      <span class="required">*</span> means required
+                    </p>
+                   <form action ="/register" class = "userinfo" method="POST">
+                    <label class ="enterbox">
+                      <span><span class="required">*</span>Name:</span>
+                      <input name="name"  required title ="Must Be name">
+                      
+                    </label>
+                    
+                    <label class ="enterbox">
+                      <span class = enterboxtext><span class="required">*</span>Email:</span>
+                      <input type="email"  name="email"  required title ="Must Be Email Address">
+            
+                    </label>
+                    
+                    <label class = "checkbox" >
+                      <span>Do you want us to send you Email with our new members update?</span>
+                      <input type="checkbox"  name="Update"  checked>
+            
+                    </label>
+                   
+                    <label class = "dropdownbox">
+                      <span><span class="required">*</span>How often do you want?</span>
+                    <select name="tier" required>
+                        <option value="" >Please select</option>
+                        <option value="1">No I don't want</option>
+                        <option value="2">1 picture pre day</option>
+                        <option value="3">2 picture pre day</option>
+                        <option value="4">3 picture pre day</option>
+                    </select>
+                  </label>
+                    
+                    <button type="submit">Register</button>
+                   </form>
+                  </div>
+                  <div class = "image">
+                  <img class="heroimage" alt="cleverist Border" src="heroimage.avif"> 
+                  </div>
+                
+              </main>
+              <footer class = footer>
+                <nav class ="footer-menu">
+                  <ul class ="footer-menu-list">
+                    <li class ="footer-menu-Item">
+                      <a calss="footer-menu-link" href="privacy.html">Privace policy</a>
+                    </li>
+                    <li class ="footer-menu-Item">
+                      <a calss="footer-menu-link" href="Contact.html">Contact us</a>
+                    </li>
+                    <li class ="footer-menu-Item">
+                      <a calss="footer-menu-link" href="joinus.html">joinus</a>
+                    </li>
+                    <li class ="footer-menu-Item">
+                      <a calss="footer-menu-link" href="report.html">report</a>
+                    </li>
+                  </ul>
+                </nav>
+              </footer>
+        </div>
+    </body>
+  </html>
