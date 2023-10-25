@@ -1,0 +1,100 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+margin:0;
+}
+.page{
+    background-color: azure;
+
+    line-height:1.6;
+}
+.header{
+    text-align: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    justify-content: space-around;
+}
+.main{
+    padding:2rem;
+
+}
+
+.register-form{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 30rem;
+    margin:0 auto;
+    padding: 2rem;
+    border:1px solid black;
+    border-radius: 1.5rem;
+}
+.required{
+    color: red; 
+}
+.register-invalidmessage{
+    grid-column: span 2;
+    color:red;
+}
+.register-form-invalidname{
+    display:none;
+}
+.register-confirm-error .register-form-invalidname {
+display: initial;
+}
+.register-label{
+    grid-column:span 2;
+    margin-bottom: 0rem;
+   margin-right: 0.5rem;
+   
+}
+.register-input{
+    grid-column:span 2;
+    margin-bottom: 0.5rem;
+}
+.register-label-checkbox{
+    margin-top:0.5rem ; 
+}
+.register-checkbox{
+    max-width: 2rem;
+    margin-top:0.5rem ; 
+margin-right:0.5rem ;
+margin-left:2rem;
+}
+.register-bottom{
+    grid-column:span 2;
+    justify-self: center;
+    padding:0.5rem 1.5rem;
+    margin-top: 0.5rem;
+    font-size:1rem;
+}
+.register-bottom:hover,
+.register-bottom:focus{
+    background-color: aqua;
+}
+.footer{
+    background-color: antiquewhite;
+    padding: 2rem; 
+}
+@media(min-width: 40rem){
+    .require-star{
+        grid-column:span 2; 
+    }
+    .register-label{
+        margin: 0.5rem;
+        
+        grid-column:span 1;
+       
+    }
+    .register-input{
+        margin: 0.5rem;
+        grid-column:span 1;
+    
+    }
+    .register-checkbox{
+    margin-right:0.5rem ;
+    }
+    .register-bottom{
+        grid-column:span 2;
+        justify-self: center;
+    }
+    }
