@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+body{
+  margin:0;
+  height:100%;
+
+  
+}
+.page{
+   
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+.header{
+    display:grid;
+    background-color: burlywood;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 1.5rem;
+    align-items:center;
+    border-bottom: 0.1rem solid black;
+}
+.skip-link{
+    left:50%;
+    padding:4px;
+    position: absolute;   
+    top:1rem;  
+    transform: translateY(-200%);
+}
+.skip-link:focus{
+    transform: translateY(0%);
+}
+.iconarea{
+    height: 100px;
+    grid-column: Span 1;
+
+}
+
+.header-title{
+    display: flex;
+    justify-content: center;
+    grid-column: Span 1;
+}
+.menu-button{
+    grid-column: Span 1;
+margin-right: 1rem;
+}
+
+
+
+/*
+below CSS adapted from https://css.gg under the MIT License
+*/
+
+
+.menu-button {
+    transform: scale(var(--ggs,1))
+    
+   }
+   
+   .menu-button,
+   .menu-button::after,
+   .menu-button::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 4px;
+    border-radius: 3px;
+    background: currentColor
+   }
+   
+   .menu-button::after,
+   .menu-button::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -2px;
+   }
+   
+   .menu-button::after {
+    top: 8px
+   } 
+.submenu{
+    background-color:burlywood;
+    position:absolute;
+    top:4.5rem;
+    right:0;
+    padding:0;
+    margin:0;
+    display: none;
+}
+.header-menu-Item{
+    position: relative;
+
+    height: 2rem;
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+.submenu.active{
+    display:initial;
+    }
+
+
+
+
+.header-menu-link{
+    font-size: 1rem;
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0.25rem;
+}
+.header-menu-link:hover,
+.header-menu-link:focus{
+
+    color:white;
+    background-color:dodgerblue;
+
+}
+.main{
+    flex: 1;
+    overflow-y: auto;
+    background-color:papayawhip  ;
+}
+.mainitem-area{
+    background-color:#eee  ;  
+    border-bottom: 0.1rem solid black;
+}
+.mainitem-Title{
+    text-align: center;
+    margin:0;
+}
+.mainitem-image{
+    float: right;
+    margin:0.5rem;
+}
+.mainitem2-image{
+    float:left;
+    margin:0.5rem;
+}
+
+
+.mainitem-image-pic{
+max-height: 125px;
+max-width: 125px;
+}
+h1{
+    margin:0;
+}
+.footer{
+    background-color:burlywood;
+    position: relative;
+    bottom: 0; 
+    width: 100%
+}
+.footer-menu-list{
+    list-style-type: none;
+    margin:0;
+}
+@media(min-width: 44rem){
+    .header{
+        grid-template-areas: 
+        "pic title"
+        "URL URL"        ;
+        grid-template-columns: auto 1fr auto;
+       
+        column-gap: 0;
+        align-items:center;
+        border-bottom: 0.1rem solid black;
+    }
+    .iconarea{
+        grid-area: pic;
+    }
+    .buttonarea{
+        display: none;
+    }
+    .header-title{
+        grid-area: title;
+    }
+    .submenu,
+    .submenu.active{
+        grid-area: URL;
+        display: flex;
+        flex-direction:row;    
+        position:initial;     
+    }
+     .header-menu-Item{
+        display:flex;
+        justify-content: center;
+     }
+     .header-menu-link:hover,
+.header-menu-link:focus{
+
+    color:white;
+    background-color:dodgerblue;
+
+   border-radius: 0.5rem;
+}
+.mainitem-area{
+    margin: 1rem;
+    border:0.1rem solid black;
+    display:grid;
+    grid-template-areas: "title pic";
+}
+.mainitem-discription{
+    grid-area: title;
+}
+.mainitem-image-pic{
+    max-height: initial;
+    max-width: initial;
+    }
+    .mainitem-image{
+        float:none;
+        grid-area: pic;
+    }
+    .mainitem2-image{
+        float:none;
+        grid-area: title;
+    }
+.footer{
+    height:5rem;
+}
+.footer-menu{
+    height:100%;
+}
+ .footer-menu-list{
+    height:100%;
+    padding:0;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+ }
+ .footer-menu-Item{
+    grid-column: span 1;
+ }
+
+}
