@@ -9,7 +9,7 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
         <input type="text" placeholder="Your Name" />
         {/* ... other form fields ... */}
 
-        <Button type="submit" value="Submit" />
+        <Button type="submit" value="Submit" >Submit</Button>
         <Button type="button" onClick={onClose}>Close</Button>
         
       </form>
