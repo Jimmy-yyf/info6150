@@ -1,0 +1,21 @@
+.NavBar{
+    background-color: lime;
+}
+.NavBar__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+    
+    .NavBar__link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    }
+    .NavBar__link:hover {
+    background-color: dodgerblue;
+    color: black;
+    }

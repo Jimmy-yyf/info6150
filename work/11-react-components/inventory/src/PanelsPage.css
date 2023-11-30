@@ -1,0 +1,10 @@
+.PanelsPage{
+    margin:1rem;
+    display: grid;
+    grid-template-areas:
+    "pic text";
+    justify-content: center;
+}
+.Panelpic{
+    margin:1rem;
+}

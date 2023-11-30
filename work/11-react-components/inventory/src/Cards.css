@@ -1,0 +1,47 @@
+.card-area{
+    background-color: rgb(236, 245, 161);
+    display:grid;
+    list-style-type: none;
+        align-items: center; 
+    justify-content: center;
+}
+
+.card {
+    border: 0.15rem solid #333; 
+    height:100%;
+    width:25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.card-title{
+    font-size: 2rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.card-link{
+    text-decoration: none;
+    margin-top: auto;
+    border: 0.15rem solid #333; 
+    background-color: white;
+    font-size: 150%;
+    align-self: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.card-link:hover,
+.card-link:focus{
+    background-color:rgb(205, 132, 219);
+
+}
+.card-pic{
+    border-radius: 1.5rem;
+}
+.card-text{
+    margin:1rem;
+}

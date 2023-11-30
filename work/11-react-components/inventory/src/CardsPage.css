@@ -1,0 +1,9 @@
+.CardsPage{
+    margin:1rem;
+    display: grid;
+    grid-template-areas:
+    "Card"
+    "text"
+    ;
+    justify-content: center;
+}
