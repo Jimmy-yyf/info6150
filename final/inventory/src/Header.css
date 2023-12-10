@@ -1,0 +1,74 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);  
+    background-color: var(--header__background-color);
+    column-gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    color:var( --header__text-color);
+    }
+.Header__logo-area{
+    grid-column: Span 12;
+}
+    .header__logo {
+
+
+            height:10rem;
+            width: 10rem;
+            border-radius: 5rem;   
+            margin:1rem ;
+            margin-bottom: 0;
+    }
+    .header__title {
+        font-size: 400%;
+        grid-column: Span 12;
+    text-align: center;
+    }
+    .header__button{
+        color:var(--header__text-color);;
+        grid-column: Span 12;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    }
+    .header__Nav{
+        background-color:var(--header__background-color); 
+        grid-column: Span 12;
+
+    }
+    .change__button{
+        grid-column: Span 12;
+        justify-self: center;
+
+        color:var(--header__text-color);
+    }
+    @media(min-width: 50rem){
+        .header {  
+            align-items: center;
+            justify-items:  normal;
+            }
+            .Header__logo-area{
+                grid-column: Span 2 ;
+            }
+
+        .header__title {
+            grid-column: Span 8;
+            text-align: center;
+            }
+            .header__button{
+                  
+                overflow: hidden;
+                max-height: 0;
+                opacity: 0;
+                grid-column: Span 0;
+            }
+            .header__Nav{
+                grid-column: Span 12;
+            }
+            .change__button{
+                margin-left: 2.5rem;
+                justify-self: left;
+ 
+            }
+            
+    }

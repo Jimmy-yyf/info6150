@@ -1,0 +1,34 @@
+.aboutus__page{
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(12,1fr); 
+    background-color: var(--main-theam-color1);
+    color:var( --header__text-color);
+}
+.aboutus__title{
+    font-size: 2rem;
+    margin:2rem;
+    grid-column: Span 12;
+}
+.aboutus__subtitle{
+
+    font-size: 1.5rem;
+    grid-column: Span 12;
+    margin:2rem;
+    margin-top:0;
+}
+.aboutus__image{
+    width: 100%;
+    grid-column: Span 12;
+    margin-bottom: 2.5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    max-width: 50rem; 
+}
+.aboutus__text{
+    grid-column: Span 12;
+    padding:3rem;
+    padding-top:0;
+
+}

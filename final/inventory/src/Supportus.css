@@ -1,0 +1,27 @@
+.form__title{
+padding:2rem;
+}
+.Supportus__page{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--main-theam-color1);
+    color:var( --header__text-color);
+    align-items: center;
+}
+.register__emphasize{
+color:red;
+}
+.register{
+    background-color: var(--main-theam-color2);
+    border: 0.15rem solid #333; 
+    display:flex;
+    flex-direction:column ;
+    padding:3rem;
+ max-width: 20rem;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 32rem;
+}
+.register_error{
+    color:red;
+}

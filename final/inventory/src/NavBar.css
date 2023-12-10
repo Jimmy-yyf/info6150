@@ -1,0 +1,43 @@
+.nav-bar {
+  
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
+  
+  .nav-bar.show {
+    
+    max-height: 500px; 
+    opacity: 1;
+  }
+.NavBar__list {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+    }
+    
+    .NavBar__link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:var(--header__text-color)
+    
+    }
+    .NavBar__link:hover {
+    background-color:var(--main-theam-color1);
+    color: var( --header__text-color);
+    }
+    @media(min-width: 50rem){
+      .nav-bar {
+  
+        max-height: 500px; 
+        opacity: 1;
+      }
+          
+  }

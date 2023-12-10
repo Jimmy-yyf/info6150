@@ -1,0 +1,77 @@
+.CardsPage{
+    
+    background-color: var(--main-theam-color1);
+    display:grid;
+
+    justify-content: center;
+    grid-template-columns: repeat(12,1fr);  
+}
+.accordion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column: Span 12;
+}
+.accordion__nav{
+    
+    text-decoration: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+color:var(--header__text-color);
+font-size: 120%;
+}
+
+.accordion__nav:hover,  
+.accordion__nav:focus
+{
+background-color: var(--nav__background-focus-color);
+}
+.accordion__discription{
+    font-size: 120%;
+    border-left:0; 
+    
+    display:grid;
+    grid-column: Span 12;
+    justify-items: center;
+}
+.accordion__pic{
+    width: 100%;
+    margin-bottom: 2.5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    max-width: 50rem;
+}
+.accordion__title{
+    color:var(--header__text-color);
+    font-size: 2rem;
+    justify-self: center;
+    margin:2rem
+}
+.accordion__subtitle{
+    color:var(--header__text-color);
+    font-size: 1.5rem;
+    justify-self: center;
+    margin:2rem;
+    margin-top:0;
+}
+.accordion__text{
+    
+    color:var(--header__text-color);
+    padding:3rem;
+    padding-top:0;
+    
+}
+@media( min-width: 50rem) {
+    .accordion{
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        grid-column: Span 2;
+    }
+    .accordion__discription{
+
+        grid-column: Span 10;
+        border-left: 0.1rem solid var(--nav__background-focus-color); 
+    }
+
+}

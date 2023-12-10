@@ -1,0 +1,49 @@
+.PanelsPage{
+    background-color: var(--main-theam-color1);
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(12,1fr);  
+    
+}
+.gallery__button__area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column: Span 12;
+}
+.gallery__button{
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  color:var(--header__text-color);
+  font-size: 100%;
+}
+.gallery__button:hover,
+.gallery__button:focus{
+    background-color: var(--nav__background-focus-color);
+}
+.gallery__image__area{
+    border-left:0; 
+    
+    display:grid;
+    grid-column: Span 12;
+    justify-items: center;
+}
+.gallery__image{
+    width:100%;
+    max-width: 50rem;
+    padding:1rem;
+}
+@media( min-width: 50rem) {
+    .gallery__button__area{
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        grid-column: Span 2;
+    }
+    .gallery__image__area{
+        border-left: 0.1rem solid var(--nav__background-focus-color); 
+        grid-column: Span 10;
+
+    }
+}

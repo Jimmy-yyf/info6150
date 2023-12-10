@@ -1,0 +1,35 @@
+*, *::before, *::after{
+  margin:0;
+  box-sizing:border-box;
+}
+:root{
+  --header__background-color: rgb(231, 247, 137);
+  --header__text-color:black;
+  --text-outstand:rgba(229, 255, 0, 0.884);
+  --main-theam-color1: rgb(213, 205, 255);
+  --main-theam-color2: rgb(181, 245, 161);
+  --button__background-color:black;
+  --button__text-color:white;
+  --nav__background-focus-color:rgb(205, 132, 219);
+}
+[data-theme ="dark"]{
+  --header__background-color: rgb(2, 44, 122);
+  --header__text-color:white;
+  --text-outstand:rgba(229, 255, 0, 0.884);
+  --main-theam-color1: black;
+  --main-theam-color2: rgb(2, 44, 122);
+  --button__background-color:white;
+  --button__text-color:rgb(3, 84, 99);
+  --nav__background-focus-color:rgb(205, 132, 219);
+}
+
+.skip-link{
+  left:50%;
+  padding:4px;
+  position: absolute;   
+  top:1rem;  
+  transform: translateY(-200%);
+}
+.skip-link:focus{
+  transform: translateY(0%);
+}
